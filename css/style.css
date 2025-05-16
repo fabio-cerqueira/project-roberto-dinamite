@@ -1,0 +1,294 @@
+/* GLOBAL styles */
+* {
+  box-sizing: border-box;
+
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --color-titles: #fff;
+  --color-text-hover: #000000;
+  --color-table: #000000cc;
+  --color-shadow: #0200006e;
+}
+
+
+/* BIO styles */
+.bio {
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding-top: 10px;
+}
+
+iframe {
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 100vw;
+  min-width: 177.77vh; /* 100 * (16 / 9) */
+  height: 56.25vw; /* Proporção 16:9 */
+  min-height: 100vh;
+
+  transform: translate(-50%, -50%);
+  pointer-events: none; /* Impede cliques no vídeo */
+}
+
+.bio::before {
+  content: "";
+  background-image: url("https://www.youtube.com/watch?v=LHSBoB77Fcs&t=103s");
+}
+
+.bio__container,
+.statistic__container {
+  max-width: 768px;
+}
+
+.bio__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  width: 100%;
+
+  font-family: 'Ysabeau Infant', sans-serif;
+}
+
+.bio__info {
+  position: relative;
+
+  text-align: center;
+}
+
+.bio__info figure::before {
+  z-index: -1;
+  position: absolute;
+  left: 52px;
+  top: -7px;
+
+  width: 215px;
+  height: 215px;
+
+  content: "";
+  background: linear-gradient(90deg, #000000, #fff);
+  border-radius: 50%;
+}
+
+.bio__info img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+
+  border-radius: 50%;
+}
+
+.bio__info h1 {
+  position: relative;
+
+  color: var(--color-titles);
+  text-align: center;
+  text-shadow: 3px 3px 1px var(--color-shadow);
+  font-size: 42px;
+}
+
+.bio__info h1::before {
+  position: absolute;
+  bottom: 0px;
+
+  width: 55px;
+  height: 5px;
+
+  content: "";
+  background: linear-gradient(90deg, #000000, #fff);
+  border-radius: 4px;
+}
+
+.bio__info h1::after {
+  position: absolute;
+  top: 25px;
+  right: -25px;
+
+  width: 20px;
+  height: 20px;
+
+  content: "";
+  background-image: url("../assets/icon/verificado.png");
+  background-size: cover;
+}
+
+.bio__links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.bio__links a {
+  z-index: 0;
+  position: relative;
+
+  width: 100%;
+  padding: 10px;
+
+  color: var(--color-titles);
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+
+  border-radius: 20px;
+  background-color: var(--color-shadow);
+}
+
+.bio__links a:nth-child(1)::before {
+  position: absolute;
+  left: 10px;
+  bottom: 5px;
+
+  width: 30px;
+  height: 30px;
+
+  content: "";
+  background-image: url("../assets/icon/youtube.png");
+  background-size: cover;
+}
+
+.bio__links a:nth-child(2)::before {
+  position: absolute;
+  left: 10px;
+  bottom: 5px;
+
+  width: 30px;
+  height: 30px;
+
+  content: "";
+  background-image: url("../assets/icon/instagram.png");
+  background-size: cover;
+}
+
+.bio__links a:nth-child(3)::before {
+  position: absolute;
+  left: 10px;
+  bottom: 5px;
+
+  width: 30px;
+  height: 30px;
+
+  content: "";
+  background-image: url("../assets/icon/facebook.png");
+  background-size: cover;
+}
+
+.bio__links a:nth-child(4)::before {
+  position: absolute;
+  left: 10px;
+  bottom: 5px;
+
+  width: 30px;
+  height: 30px;
+
+  content: "";
+  background-image: url("../assets/icon/wikipidea.png");
+  background-size: cover;
+}
+
+.bio__links a:hover {
+  color: var(--color-text-hover);
+
+  background-color: var(--color-titles);
+}
+
+
+/* STATISTIC style */
+.statistic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+
+  background-image: url("../assets/bg002-roberto.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+}
+
+.statistic__container {
+  overflow-x: hidden;
+
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-direction: column;
+  width: 100%;
+  min-width: 300px;
+
+  font-family: 'Montserrat', sans-serif;
+}
+
+.statistic__table {
+  overflow-x: auto;  
+
+  width: calc(100% - 10px);
+  padding: 0 10px;
+}
+
+.statistic__table table{
+  width: 100%;
+}
+
+.statistic__container h2 {
+  color: var(--color-titles);
+  text-shadow: 3px 3px 1px var(--color-shadow);
+  font-size: 28px;
+}
+
+.statistic__table th,
+.statistic__table tr,
+.statistic__table td {
+  padding: 15px;
+  height: 60px;
+
+  text-align: center;
+}
+
+.statistic__table thead tr,
+.statistic__table tbody tr:nth-of-type(even) {
+  color: var(--color-titles);
+
+  background-color: var(--color-table);
+}
+
+.statistic__table tbody tr:nth-of-type(odd) {
+  color: var(--color-text-hover);
+
+  background-color: var(--color-titles);
+}
+
+.statistic__table tbody tr td:first-child {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.escudes {
+  width: 40px;
+  height: 40px;
+}
+
+.escudes img {
+  width: 100%;
+  height: 100%;
+}
