@@ -1,24 +1,30 @@
-🟡⚽ Project Roberto Dinamite
-Este projeto é uma homenagem ao lendário jogador Roberto Dinamite, ídolo eterno do Vasco da Gama e um dos maiores artilheiros do futebol brasileiro.
+# 🟡⚽ Project Roberto Dinamite
 
-Trata-se de uma página web inspirada no estilo Linktree, dividida em duas seções principais:
+Este projeto é uma homenagem ao lendário jogador **Roberto Dinamite**, ídolo eterno do Vasco da Gama e um dos maiores artilheiros do futebol brasileiro.
 
-📌 Funcionalidades
-Página Inicial:
-Lista de links para redes sociais, perfis e conteúdos relacionados a Roberto Dinamite.
+Trata-se de uma página web inspirada no estilo **Linktree**, dividida em duas seções principais:
 
-Página de Estatísticas:
-Exibe dados marcantes da carreira do jogador, como número de gols, jogos, títulos e recordes.
+## 📌 Funcionalidades
 
-💻 Tecnologias Utilizadas
-HTML5
-CSS3
+- **Página Inicial:**  
+  Lista de links para redes sociais, perfis e conteúdos relacionados a Roberto Dinamite.
 
-📁 Estrutura do Projeto
+- **Página de Estatísticas:**  
+  Exibe dados marcantes da carreira do jogador, como número de gols, jogos, títulos e recordes.
+
+## 💻 Tecnologias Utilizadas
+
+- HTML5  
+- CSS3  
+
+## 📁 Estrutura do Projeto
+
+```bash
 project-roberto-dinamite/
 ├── index.html        # Página principal (links)
 ├── css/
 │   └── style.css     # Estilos do projeto
 ├── assets/
-│   └── icon/         # Imagens do projeto
+│   └── icons/        # Icones do projeto
+│   └── # Imagens do projeto
 └── README.md         # Este arquivo
