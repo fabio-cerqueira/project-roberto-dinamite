@@ -13,6 +13,7 @@ Exibe dados marcantes da carreira do jogador, como número de gols, jogos, títu
 💻 Tecnologias Utilizadas
 HTML5
 CSS3
+
 📁 Estrutura do Projeto
 project-roberto-dinamite/
 ├── index.html        # Página principal (links)
